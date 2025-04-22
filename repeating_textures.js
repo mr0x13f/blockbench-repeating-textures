@@ -11,9 +11,9 @@ Plugin.register('repeating_textures', {
         let OriginalTexture = Texture;
         class TweakedTexture extends OriginalTexture {
             constructor() {
-                super()
-                this.img.tex.magFilter = THREE.NearestFilter
-                this.img.tex.minFilter = THREE.NearestFilter
+                super();
+                this.img.tex.magFilter = THREE.NearestFilter;
+                this.img.tex.minFilter = THREE.NearestFilter;
                 this.img.tex.wrapS = THREE.RepeatWrapping;
                 this.img.tex.wrapT = THREE.RepeatWrapping;
             }
